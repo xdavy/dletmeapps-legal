@@ -1,0 +1,33 @@
+# Bloc commun à tous les dépôts : à mettre en tête du .gitignore de chaque projet.
+# Ce qui dépend de la machine (macOS, éditeurs) est dans le gitignore global, pas ici.
+
+# Secrets : jamais commités. Un secret poussé une fois reste dans l'historique.
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+*.p8
+*.p12
+
+# Méthode : non versionnée pour le moment (décision du 27 octobre 2026), brief compris.
+# CARTE.md, CLAUDE.md et README.md, eux, se versionnent : c'est la documentation du code et du projet.
+BRIEF.md
+PLAN-ETAPE-*.md
+COMPTE-RENDU-ETAPE-*.md
+DECISIONS.md
+JOURNAL-VERIFICATIONS.md
+
+# Données, sorties, journaux, sauvegardes : jamais dans l'historique
+output/
+data/
+logs/
+*.log
+backups/
+dumps/
+*.zip
+*.tar.gz
+
+# Propre au projet
+captures/
