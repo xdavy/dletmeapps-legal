@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MeNotes · Politique de confidentialité</title>
+<link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+<header>
+<a href="../index.html">Toutes les apps</a>
+<a href="privacy.html" lang="en" hreflang="en">English</a>
+</header>
+<main>
+<h1>Politique de confidentialité de MeNotes</h1>
+<p class="meta" id="updated">Dernière mise à jour : 30 octobre 2026.</p>
+
+<section id="data">
+<h2>Les données que MeNotes traite</h2>
+<p>MeNotes est une app de notes pour iPhone, sous iOS 26 ou plus récent. Elle ne collecte aucune donnée : tout ce qui suit reste sur ton iPhone, sauf les copies faites par les services d'Apple décrits plus bas.</p>
+<ul>
+<li>Tes notes et tes tâches : titre, texte, mise en forme, photos, éléments de tâche, tags, échéance et réglages de rappel, état (épinglée, archivée, verrouillée) et date de modification.</li>
+<li>Tes tags : nom et couleur. Neuf tags sont créés au premier lancement.</li>
+<li>Ton profil, facultatif : un nom et une photo. C'est un profil local : il n'existe ni compte ni serveur MeNotes.</li>
+<li>Tes réglages : thème, affichage, tri, taille du texte, verrouillage.</li>
+<li>Pour les notes protégées par mot de passe et pour le code d'accès de l'app : une empreinte (PBKDF2-HMAC-SHA256), jamais le mot de passe lui-même.</li>
+</ul>
+<p>MeNotes chiffre en AES-GCM, avec une clé de 256 bits propre à l'app, le titre et le texte des notes, leur mise en forme, les photos, le texte des tâches et ta photo de profil. Ne sont pas chiffrés par MeNotes : les noms et couleurs des tags, les dates, les échéances et rappels, l'état des notes et ton nom de profil. Ils restent protégés par la protection des données d'iOS, liée au code de ton iPhone.</p>
+<p>Les photos sont enregistrées telles que tu les choisis, avec leurs métadonnées : par exemple la date, l'appareil et, si la photo en contient, le lieu de prise de vue.</p>
+<p>La clé de chiffrement est conservée dans le trousseau d'iOS, marquée pour se synchroniser avec ton trousseau iCloud. MeNotes ne la garde en mémoire que pendant que tu utilises l'app, et l'en efface quand l'app passe en arrière-plan.</p>
+<p>En cas d'erreur, MeNotes inscrit un code d'erreur dans le journal d'iOS (os.Logger), jamais le contenu d'une note.</p>
+</section>
+
+<section id="collection">
+<h2>Comment MeNotes les obtient</h2>
+<ul>
+<li>Tu les saisis toi-même : notes, tâches, tags, nom de profil, réglages.</li>
+<li>Photos : par le sélecteur de photos d'iOS. MeNotes ne reçoit que les photos que tu choisis et ne demande pas l'accès à ta photothèque.</li>
+<li>Face ID : la reconnaissance est faite par iOS. MeNotes ne reçoit que la réponse, reconnu ou non, jamais ton visage.</li>
+<li>Restauration : quand tu relis dans MeNotes une sauvegarde que tu as exportée.</li>
+</ul>
+<p>MeNotes ne lit aucun identifiant de ton appareil, ne se connecte à aucun serveur et n'intègre aucun outil tiers de mesure, de publicité ou de suivi. Comme elle ne collecte rien, elle ne collecte rien non plus auprès des enfants.</p>
+</section>
+
+<section id="purposes">
+<h2>À quoi elles servent</h2>
+<ul>
+<li>Afficher, organiser et rechercher tes notes sur ton iPhone.</li>
+<li>Te rappeler une échéance : MeNotes programme sur ton iPhone une notification locale, dont le titre est celui de la note. Selon ton réglage d'aperçu des notifications dans iOS, ce titre peut apparaître sur l'écran verrouillé, même pour une note protégée.</li>
+<li>Protéger l'app et tes notes : code d'accès, Face ID, mots de passe de notes.</li>
+<li>Sauvegarder et restaurer, par un fichier que tu exportes toi-même, chiffré par défaut avec un mot de passe de 8 caractères au moins. Il contient tes notes, tâches, tags et photos avec leurs métadonnées, et l'empreinte du mot de passe des notes qui en ont un. Il ne contient ni ton profil, ni le code d'accès de l'app. Tu peux l'exporter sans chiffrement, après un avertissement : il est alors lisible par quiconque y accède.</li>
+<li>Comprendre une panne : si MeNotes n'arrive pas à ouvrir tes notes, son écran de secours propose « Copier le détail ». Ce bouton met dans ton presse-papiers la version de l'app, le nom du fichier de données, le code d'erreur et la date, que tu peux transmettre au support si tu le souhaites.</li>
+</ul>
+<p>Aucune donnée ne sert à la publicité, à la mesure d'audience ou au profilage, et aucune n'est vendue.</p>
+</section>
+
+<section id="third-parties">
+<h2>Qui d'autre les voit</h2>
+<p>Personne : ni le développeur, ni un tiers. MeNotes n'envoie et ne partage rien. Seuls des services d'Apple peuvent en recevoir une copie, selon tes réglages iOS et tes choix :</p>
+<ul>
+<li>le trousseau iCloud, pour la clé de chiffrement, s'il est activé sur ton compte Apple ;</li>
+<li>la sauvegarde de ton iPhone, dans iCloud ou sur un ordinateur : les données de MeNotes en font partie, comme celles des autres apps, et ce que MeNotes chiffre y reste chiffré. Cela comprend la copie de précaution que MeNotes fait avant qu'une mise à jour de l'app change la structure de tes données ;</li>
+<li>iCloud Drive, ou un autre emplacement de l'app Fichiers, si tu y enregistres une sauvegarde exportée.</li>
+</ul>
+</section>
+
+<section id="retention">
+<h2>Combien de temps, et comment les supprimer</h2>
+<p>MeNotes garde tes données jusqu'à ce que tu les supprimes : aucune durée n'est fixée et rien n'est supprimé automatiquement.</p>
+<ul>
+<li>Supprimer une note l'efface tout de suite, sans corbeille, avec son rappel et l'empreinte de son mot de passe. Archiver une note ne la supprime pas.</li>
+<li>Supprimer un tag le retire de toutes les notes.</li>
+<li>« Supprimer le profil », dans les réglages de MeNotes, efface ton nom et ta photo.</li>
+<li>Retirer la protection d'une note efface l'empreinte de son mot de passe.</li>
+<li>MeNotes n'a pas de commande « tout effacer » : supprimer l'app efface ses données de ton iPhone, copie de précaution comprise. La clé de chiffrement peut rester dans ton trousseau iCloud ; sans les données, elle ne donne accès à rien.</li>
+<li>Si MeNotes ne peut plus lire tes données, son écran de secours propose « Repartir de zéro » : de nouvelles données vides sont créées, et les anciennes restent sur l'iPhone, illisibles, jusqu'à la suppression de l'app.</li>
+<li>Les sauvegardes que tu as exportées, et les sauvegardes de ton iPhone, gardent leur contenu jusqu'à ce que tu les supprimes ou qu'elles soient remplacées.</li>
+</ul>
+</section>
+
+<section id="consent">
+<h2>Retirer une autorisation</h2>
+<p>MeNotes demande deux autorisations à iOS. Tu peux les retirer à tout moment dans l'app Réglages de l'iPhone.</p>
+<ul>
+<li>Notifications (Réglages › Notifications › MeNotes) : sans elles, les rappels ne s'affichent plus. MeNotes ne peut plus programmer de rappel et te le signale ; une restauration ne reprogramme pas les rappels.</li>
+<li>Face ID (Réglages › Face ID et code › Autres apps) : sans lui, l'app se déverrouille avec son code d'accès. Les notes protégées par Face ID ne s'ouvrent plus tant que « Secure ID · Face ID » est activé dans les réglages de MeNotes ; si tu le désactives, elles s'ouvrent sans vérification. Les notes protégées par mot de passe le demandent toujours.</li>
+</ul>
+<p>MeNotes ne demande pas l'accès à ta photothèque : chaque photo est choisie par toi dans le sélecteur d'iOS, il n'y a donc rien à retirer. La clé n'est synchronisée que si le trousseau iCloud est activé sur ton compte Apple.</p>
+<p>Dans les réglages de MeNotes, tu peux aussi, à tout moment, désactiver le code d'accès de l'app, Face ID pour l'app, « Secure ID · Face ID » et le chiffrement des sauvegardes. Chaque export en clair est alors précédé d'un avertissement.</p>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Pour toute question sur cette politique ou sur tes données : Davy Ushaka Ishimwe, <a href="mailto:aadlm.ergonomic338@passmail.net">aadlm.ergonomic338@passmail.net</a>.</p>
+<p>Le développeur ne détient aucune donnée te concernant : il ne peut ni consulter, ni récupérer, ni supprimer tes notes à ta place. Si cette politique change, la date en haut de cette page change aussi.</p>
+</section>
+</main>
+<footer>
+<p>Davy Ushaka Ishimwe · <a href="mailto:aadlm.ergonomic338@passmail.net">aadlm.ergonomic338@passmail.net</a> · <a href="support-fr.html">Assistance</a></p>
+</footer>
+</body>
+</html>

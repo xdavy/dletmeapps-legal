@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MeNotes · Privacy policy</title>
+<link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+<header>
+<a href="../index.html">All apps</a>
+<a href="privacy-fr.html" lang="fr" hreflang="fr">Français</a>
+</header>
+<main>
+<h1>MeNotes privacy policy</h1>
+<p class="meta" id="updated">Last updated: 30 October 2026.</p>
+
+<section id="data">
+<h2>The data MeNotes handles</h2>
+<p>MeNotes is a notes app for iPhone, running iOS 26 or later. It collects no data: everything below stays on your iPhone, except for the copies made by the Apple services described further down.</p>
+<ul>
+<li>Your notes and tasks: title, text, formatting, photos, task items, tags, due date and reminder settings, state (pinned, archived, locked) and modification date.</li>
+<li>Your tags: name and colour. Nine tags are created on first launch.</li>
+<li>Your profile, optional: a name and a photo. It is a local profile: there is no MeNotes account and no MeNotes server.</li>
+<li>Your settings: theme, layout, sort order, text size, locking.</li>
+<li>For notes protected by a password and for the app passcode: a fingerprint (PBKDF2-HMAC-SHA256), never the password itself.</li>
+</ul>
+<p>MeNotes encrypts with AES-GCM, using a 256-bit key of its own, the title and text of your notes, their formatting, the photos, the text of your tasks and your profile photo. Not encrypted by MeNotes: tag names and colours, dates, due dates and reminders, the state of your notes and your profile name. They remain covered by iOS data protection, which is tied to your iPhone passcode.</p>
+<p>Photos are stored as you pick them, with their metadata: for example the date, the device and, if the photo contains it, the place where it was taken.</p>
+<p>The encryption key is kept in the iOS keychain, marked to sync with your iCloud Keychain. MeNotes keeps it in memory only while you use the app, and clears it from memory when the app goes to the background.</p>
+<p>When an error occurs, MeNotes writes an error code to the iOS log (os.Logger), never the content of a note.</p>
+</section>
+
+<section id="collection">
+<h2>How MeNotes gets this data</h2>
+<ul>
+<li>You type it yourself: notes, tasks, tags, profile name, settings.</li>
+<li>Photos: through the iOS photo picker. MeNotes only receives the photos you choose and does not ask for access to your photo library.</li>
+<li>Face ID: recognition is done by iOS. MeNotes only receives the answer, recognised or not, never your face.</li>
+<li>Restore: when you load into MeNotes a backup you exported.</li>
+</ul>
+<p>MeNotes reads no identifier of your device, connects to no server and includes no third-party analytics, advertising or tracking tool. Since it collects nothing, it collects nothing from children either.</p>
+</section>
+
+<section id="purposes">
+<h2>What it is used for</h2>
+<ul>
+<li>Showing, organising and searching your notes on your iPhone.</li>
+<li>Reminding you of a due date: MeNotes schedules a local notification on your iPhone, titled with the note's title. Depending on your notification preview setting in iOS, this title may appear on the lock screen, even for a protected note.</li>
+<li>Protecting the app and your notes: passcode, Face ID, note passwords.</li>
+<li>Backing up and restoring, through a file you export yourself, encrypted by default with a password of at least 8 characters. It contains your notes, tasks, tags and photos with their metadata, and the password fingerprint of the notes that have one. It contains neither your profile nor the app passcode. You can export it without encryption, after a warning: anyone who can access the file can then read it.</li>
+<li>Understanding a failure: if MeNotes cannot open your notes, its recovery screen offers “Copier le détail” (copy the details). This button puts on your clipboard the app version, the name of the data file, the error code and the date, which you can send to support if you wish.</li>
+</ul>
+<p>No data is used for advertising, analytics or profiling, and none is sold.</p>
+</section>
+
+<section id="third-parties">
+<h2>Who else sees it</h2>
+<p>Nobody: neither the developer nor any third party. MeNotes sends and shares nothing. Only Apple services may receive a copy, depending on your iOS settings and your choices:</p>
+<ul>
+<li>iCloud Keychain, for the encryption key, if it is turned on for your Apple Account;</li>
+<li>your iPhone backup, in iCloud or on a computer: MeNotes data is part of it, like that of other apps, and what MeNotes encrypts stays encrypted there. This includes the safety copy MeNotes makes before an app update changes the structure of your data;</li>
+<li>iCloud Drive, or another location in the Files app, if you save an exported backup there.</li>
+</ul>
+</section>
+
+<section id="retention">
+<h2>How long it is kept, and how to delete it</h2>
+<p>MeNotes keeps your data until you delete it: no retention period is set and nothing is deleted automatically.</p>
+<ul>
+<li>Deleting a note erases it at once, without a trash, together with its reminder and its password fingerprint. Archiving a note does not delete it.</li>
+<li>Deleting a tag removes it from every note.</li>
+<li>“Supprimer le profil” (delete profile), in the MeNotes settings, erases your name and your photo.</li>
+<li>Removing the protection from a note erases its password fingerprint.</li>
+<li>MeNotes has no “erase everything” command: deleting the app erases its data from your iPhone, safety copy included. The encryption key may remain in your iCloud Keychain; without the data, it gives access to nothing.</li>
+<li>If MeNotes can no longer read your data, its recovery screen offers “Repartir de zéro” (start over): new, empty data is created, and the old data stays on the iPhone, unreadable, until the app is deleted.</li>
+<li>Backups you exported, and your iPhone backups, keep their content until you delete them or they are replaced.</li>
+</ul>
+</section>
+
+<section id="consent">
+<h2>Withdrawing a permission</h2>
+<p>MeNotes asks iOS for two permissions. You can withdraw them at any time in the iPhone Settings app.</p>
+<ul>
+<li>Notifications (Settings › Notifications › MeNotes): without them, reminders no longer appear. MeNotes can no longer schedule a reminder and tells you so; a restore does not reschedule reminders.</li>
+<li>Face ID (Settings › Face ID &amp; Passcode › Other Apps): without it, the app unlocks with its passcode. Notes protected by Face ID no longer open while “Secure ID · Face ID” is on in the MeNotes settings; if you turn it off, they open without any check. Notes protected by a password always ask for it.</li>
+</ul>
+<p>MeNotes does not ask for access to your photo library: you choose each photo in the iOS picker, so there is nothing to withdraw. The key is synced only if iCloud Keychain is turned on for your Apple Account.</p>
+<p>In the MeNotes settings, you can also turn off, at any time, the app passcode, Face ID for the app, “Secure ID · Face ID” and backup encryption. Each unencrypted export is then preceded by a warning.</p>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>For any question about this policy or your data: Davy Ushaka Ishimwe, <a href="mailto:aadlm.ergonomic338@passmail.net">aadlm.ergonomic338@passmail.net</a>.</p>
+<p>The developer holds no data about you: they can neither view, nor recover, nor delete your notes on your behalf. If this policy changes, the date at the top of this page changes too.</p>
+</section>
+</main>
+<footer>
+<p>Davy Ushaka Ishimwe · <a href="mailto:aadlm.ergonomic338@passmail.net">aadlm.ergonomic338@passmail.net</a> · <a href="support.html">Support</a></p>
+</footer>
+</body>
+</html>
