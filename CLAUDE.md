@@ -34,7 +34,8 @@ Le niveau du projet (léger) et les décisions sont dans `DECISIONS.md`. Les rè
 
 ## Git
 
-- Dépôt local créé le 30/10/2026 ; distant `github.com/xdavy/dletmeapps-legal`, **public** (GitHub Pages l'exige sur un compte Free), créé à l'étape 2 avec accord explicite ; branche `main`, un tag `etape-<N>-validee` par étape validée ; commit à la livraison, tag et push à la validation ; rien n'est poussé sans accord.
+- Dépôt local créé le 30/10/2026 ; distant `github.com/xdavy/dletmeapps-legal`, **public** (GitHub Pages l'exige sur un compte Free), créé le 31/10/2026 avec accord explicite ; GitHub Pages sert la branche `main` à la racine, à `https://xdavy.github.io/dletmeapps-legal/` ; un tag `etape-<N>-validee` par étape validée ; commit à la livraison, tag et push à la validation ; rien n'est poussé sans accord.
+- Adresse d'auteur des commits : `2988877+xdavy@users.noreply.github.com`, réglée en local dans ce dépôt (D-010 du 31/10/2026) ; jamais l'adresse personnelle.
 - Tout fichier versionné est public : rien de personnel au-delà du nom et de l'adresse de support, pas de chemin `/Users/`.
 - Non versionnés : `DECISIONS.md`, captures locales (bloc commun du `.gitignore`). Versionnés : le site, `scripts/`, `CLAUDE.md`, `README.md` s'il existe.
 
