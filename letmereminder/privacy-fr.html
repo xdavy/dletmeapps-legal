@@ -13,14 +13,13 @@
 </header>
 <main>
 <h1>LetMeRemind · Politique de confidentialité</h1>
-<p class="meta" id="updated">Mise à jour : 30 octobre 2026</p>
+<p class="meta" id="updated">Mise à jour : 11 novembre 2026</p>
 
 <section id="data">
 <h2>Les données que l'app traite</h2>
-<p>LetMeRemind est une app pour iPhone, sous iOS 26 ou plus récent, qui garde le fil de tout ce qui revient : factures, crédits, traitements, entretiens, contrats, documents. Elle n'a ni compte ni serveur : tout ce qu'elle traite reste sur votre iPhone.</p>
+<p>LetMeRemind est une app pour iPhone, sous iOS 26 ou plus récent, qui garde le fil de tout ce qui revient : factures, crédits, entretiens, contrats, documents. Elle n'a ni compte ni serveur : tout ce qu'elle traite reste sur votre iPhone.</p>
 <ul>
-<li><strong>Vos suivis et vos rappels</strong> : noms, catégories, dates et récurrences, montants, notes, un lien si vous en ajoutez un, et l'historique de chaque échéance : payée, faite ou prise, quand, et le montant réellement payé.</li>
-<li><strong>Vos traitements</strong> : les noms des médicaments, que vous écrivez vous-même en texte libre, sans posologie. L'app ne donne aucun conseil médical.</li>
+<li><strong>Vos suivis et vos rappels</strong> : noms, catégories, dates et récurrences, montants, notes, un lien si vous en ajoutez un, et l'historique de chaque échéance : payée ou faite, quand, et le montant réellement payé.</li>
 <li><strong>Vos documents</strong> : PDF et photos, 20 Mo au plus chacun, avec leur titre.</li>
 <li><strong>Vos réglages</strong>, comme l'heure par défaut des notifications et les choix d'affichage.</li>
 <li><strong>Le verrouillage de l'app</strong>, si vous l'activez : une empreinte salée de votre code à 6 chiffres, l'attente imposée après des codes faux, et une empreinte, fournie par iOS, de l'état des visages enregistrés dans Face ID. Ils sont gardés dans le trousseau de l'iPhone, pour cet iPhone seulement. L'app ne voit jamais votre visage ni aucune donnée biométrique.</li>
@@ -43,10 +42,9 @@
 <section id="purposes">
 <h2>À quoi servent les données</h2>
 <ul>
-<li><strong>Afficher</strong> vos échéances, votre historique et vos totaux, sur votre iPhone.</li>
-<li><strong>Les notifications</strong>, programmées sur votre iPhone jusqu'à 90 jours à l'avance, sans passer par Internet. Une notification ordinaire montre le nom du rappel, son échéance, le nombre de médicaments et le montant. Un rappel « Sensible » n'affiche que « Vous avez un rappel » ; les traitements et les rappels de santé sont sensibles dès leur création. Les prises d'un traitement, les relances et le retour d'un rappel reporté sont des notifications urgentes, qui peuvent passer un mode Concentration.</li>
-<li><strong>Les alarmes</strong> (AlarmKit), si vous les activez pour un traitement : l'iPhone sonne ou vibre à l'heure d'une prise, même en mode silencieux, à la place de la notification de cette prise. L'écran de l'alarme est dessiné par iOS : il montre le nom du traitement, ou « Vous avez un rappel » pour un traitement sensible, et un bouton « Pris » qui ouvre l'app. L'app n'affiche aucune activité en direct à elle.</li>
-<li><strong>L'actualisation en arrière-plan</strong> : iOS réveille l'app quand il le décide, au plus tôt quatre heures après que vous l'avez quittée, puis au plus une fois toutes les quatre heures, pour reprogrammer vos notifications et vos alarmes.</li>
+<li><strong>Afficher</strong> vos échéances, votre historique et vos totaux, sur votre iPhone. Les placements à terme y sont tenus à part : leurs montants s'écrivent « ••• € », et l'onglet Finances les range dans une vue « Placements », floue jusqu'à ce que vous touchiez l'œil. Ils se masquent de nouveau dès que vous quittez l'app. Ce masque protège des regards ; il ne chiffre rien, et la fiche d'un placement écrit toujours son montant.</li>
+<li><strong>Les notifications</strong>, programmées sur votre iPhone jusqu'à 90 jours à l'avance, sans passer par Internet. Une notification ordinaire montre le nom du rappel, son échéance et le montant. Un rappel « Sensible » n'affiche que « Vous avez un rappel » ; un placement à terme l'est dès sa création, et vous pouvez le désactiver dans le rappel. Les relances et le retour d'un rappel reporté sont des notifications urgentes, qui peuvent passer un mode Concentration.</li>
+<li><strong>L'actualisation en arrière-plan</strong> : iOS réveille l'app quand il le décide, au plus tôt quatre heures après que vous l'avez quittée, puis au plus une fois toutes les quatre heures, pour reprogrammer vos notifications.</li>
 <li><strong>La maintenance</strong>, à chaque ouverture de l'app et à chaque retour au premier plan : elle efface ce qui a été supprimé il y a plus de 30 jours, retire les fichiers des documents qui n'existent plus, et clôt les rappels arrivés à leur fin.</li>
 <li><strong>L'export et l'import</strong> : vous pouvez exporter vos données dans un fichier .lmrbackup (format LMRB2), chiffré en AES-256-GCM par une clé tirée de votre mot de passe (PBKDF2-HMAC-SHA256, 600 000 tours). Le mot de passe, de 8 caractères ou plus, n'est jamais enregistré : sans lui, le fichier est illisible, et le développeur ne peut pas le retrouver. Sans le mot de passe, seuls la date de l'export, la version de l'app et les réglages du chiffrement sont lisibles. Vos documents y sont inclus, sauf si vous décochez « Inclure les documents », ainsi que les éléments supprimés depuis moins de 30 jours, sans le fichier d'un document supprimé.</li>
 <li><strong>Les journaux d'erreurs</strong> : quand une erreur survient, l'app l'écrit dans le journal système de l'iPhone. iOS en masque le détail par défaut, qui peut citer une valeur enregistrée ; l'app n'envoie jamais ce journal.</li>
@@ -60,7 +58,7 @@
 <p>Certains services d'Apple en reçoivent une copie, quand vous les utilisez :</p>
 <ul>
 <li><strong>La sauvegarde de l'iPhone</strong> : si la sauvegarde iCloud ou la sauvegarde sur ordinateur est activée, iOS y copie les données de l'app, documents compris. L'app ne synchronise rien avec iCloud : vos données ne sont pas partagées entre vos appareils.</li>
-<li><strong>L'écran verrouillé</strong> : iOS y affiche les notifications et les alarmes comme décrit plus haut.</li>
+<li><strong>L'écran verrouillé</strong> : iOS y affiche les notifications comme décrit plus haut.</li>
 <li><strong>Fichiers et iCloud Drive</strong> : un export va où vous le choisissez.</li>
 <li><strong>Le partage</strong> : la visionneuse de documents d'iOS permet de partager un document, si vous le faites vous-même.</li>
 <li><strong>Safari</strong> : un lien que vous avez ajouté à un rappel s'y ouvre quand vous le touchez ; le site voit alors votre visite.</li>
@@ -84,12 +82,11 @@
 <h2>Vos autorisations, et comment les retirer</h2>
 <p>Chaque autorisation se retire dans les Réglages de l'iPhone, à la page de LetMeRemind. En retirer une n'efface aucune de vos données.</p>
 <ul>
-<li><strong>Notifications</strong>, demandées pendant la présentation de l'app. Désactivées, l'app ne programme aucune notification et efface sa pastille ; ses Réglages le disent, avec un bouton vers les Réglages de l'iPhone, et « Me le rappeler dans 30 minutes » n'est plus proposé. Dans les réglages des notifications, vous pouvez aussi couper les seules notifications urgentes.</li>
-<li><strong>Alarmes</strong>, demandées la première fois que vous activez l'alarme d'un traitement. Refusées, l'interrupteur revient à l'arrêt ; retirées plus tard, plus aucune alarme ne sonne, et les prises sont de nouveau notifiées.</li>
+<li><strong>Notifications</strong>, demandées pendant la présentation de l'app. Désactivées, l'app ne programme aucune notification et efface sa pastille ; ses Réglages le disent, avec un bouton vers les Réglages de l'iPhone. Dans les réglages des notifications, vous pouvez aussi couper les seules notifications urgentes.</li>
 <li><strong>Face ID</strong>, demandé quand vous activez le verrouillage. Désactivé pour LetMeRemind, l'app demande son code à 6 chiffres à la place ; elle ne demande jamais le code de l'iPhone.</li>
 <li><strong>Appareil photo</strong>, demandé par iOS au premier scan. Désactivé, le scanner ne peut plus utiliser l'appareil photo ; vous pouvez toujours ajouter un PDF ou une photo depuis Fichiers ou Photos.</li>
 <li><strong>Photos</strong> : aucune autorisation n'est nécessaire, car le sélecteur ne donne que la photo que vous choisissez.</li>
-<li><strong>Actualisation en arrière-plan</strong> : désactivée, les notifications et les alarmes ne sont reprogrammées qu'à l'ouverture de l'app ; celles déjà programmées arrivent toujours.</li>
+<li><strong>Actualisation en arrière-plan</strong> : désactivée, les notifications ne sont reprogrammées qu'à l'ouverture de l'app ; celles déjà programmées arrivent toujours.</li>
 <li><strong>Agir depuis une notification</strong> : dans LetMeRemind, Réglages, Sécurité, « Déverrouiller pour agir depuis une notification » fait demander de déverrouiller l'iPhone avant « Payé », « Fait », « Vérifié » et « Reporter ». Ce réglage est désactivé par défaut.</li>
 </ul>
 </section>

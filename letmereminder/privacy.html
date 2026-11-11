@@ -13,14 +13,13 @@
 </header>
 <main>
 <h1>LetMeRemind · Privacy Policy</h1>
-<p class="meta" id="updated">Last updated: 30 October 2026</p>
+<p class="meta" id="updated">Last updated: 11 November 2026</p>
 
 <section id="data">
 <h2>The data the app handles</h2>
-<p>LetMeRemind is an iPhone app, for iOS 26 or later, that keeps track of what comes back: bills, credits, treatments, maintenance, contracts, documents. It has no account and no server: everything it handles stays on your iPhone.</p>
+<p>LetMeRemind is an iPhone app, for iOS 26 or later, that keeps track of what comes back: bills, credits, maintenance, contracts, documents. It has no account and no server: everything it handles stays on your iPhone.</p>
 <ul>
-<li><strong>Your items and reminders</strong>: names, categories, dates and recurrences, amounts, notes, a link if you add one, and the history of each due date: paid, done or taken, when, and the amount actually paid.</li>
-<li><strong>Your treatments</strong>: the names of medicines, written by you as free text, with no dosage. The app gives no medical advice.</li>
+<li><strong>Your items and reminders</strong>: names, categories, dates and recurrences, amounts, notes, a link if you add one, and the history of each due date: paid or done, when, and the amount actually paid.</li>
 <li><strong>Your documents</strong>: PDFs and photos, up to 20 MB each, with their title.</li>
 <li><strong>Your settings</strong>, such as the default time of notifications and the display choices.</li>
 <li><strong>The lock of the app</strong>, if you turn it on: a salted hash of your 6-digit code, the waiting time after wrong codes, and a fingerprint, provided by iOS, of the state of the faces enrolled in Face ID. They are kept in the iPhone’s keychain, for this iPhone only. The app never sees your face or any biometric data.</li>
@@ -43,10 +42,9 @@
 <section id="purposes">
 <h2>What the data is used for</h2>
 <ul>
-<li><strong>Showing</strong> your due dates, your history, and your totals, on your iPhone.</li>
-<li><strong>Notifications</strong>, scheduled on your iPhone up to 90 days ahead, without going through the internet. An ordinary notification shows the name of the reminder, its due date, the number of medicines, and the amount. A “Private” reminder only shows “You have a reminder”; treatments and health reminders are private from the moment they are created. The intakes of a treatment, the follow-ups, and the return of a snoozed reminder are Time Sensitive notifications, which can come through a Focus.</li>
-<li><strong>Alarms</strong> (AlarmKit), if you turn them on for a treatment: the iPhone rings or vibrates at the time of an intake, even in silent mode, in place of the notification of that intake. The alarm screen is drawn by iOS: it shows the name of the treatment, or “You have a reminder” for a private one, and a “Taken” button that opens the app. The app shows no Live Activity of its own.</li>
-<li><strong>Background refresh</strong>: iOS wakes the app when it decides, at the earliest four hours after you leave it, then at most once every four hours, to reschedule your notifications and alarms.</li>
+<li><strong>Showing</strong> your due dates, your history, and your totals, on your iPhone. Term deposits are kept apart: their amounts are written as dots, and the Finances tab puts them in a “Term deposits” view that stays blurred until you tap the eye. They are hidden again as soon as you leave the app. This mask keeps them from onlookers; it encrypts nothing, and the page of a term deposit always shows its amount.</li>
+<li><strong>Notifications</strong>, scheduled on your iPhone up to 90 days ahead, without going through the internet. An ordinary notification shows the name of the reminder, its due date, and the amount. A “Private” reminder only shows “You have a reminder”; a term deposit is “Private” from the moment you create it, and you can turn that off in the reminder. The follow-ups and the return of a snoozed reminder are Time Sensitive notifications, which can come through a Focus.</li>
+<li><strong>Background refresh</strong>: iOS wakes the app when it decides, at the earliest four hours after you leave it, then at most once every four hours, to reschedule your notifications.</li>
 <li><strong>Maintenance</strong>, each time the app opens or comes back to the foreground: it erases what was deleted more than 30 days ago, removes the files of documents that no longer exist, and closes the reminders that have ended.</li>
 <li><strong>Export and import</strong>: you can export your data to a .lmrbackup file (LMRB2 format), encrypted with AES-256-GCM by a key derived from your password (PBKDF2-HMAC-SHA256, 600,000 rounds). The password, 8 characters or more, is never stored: without it, the file can’t be read, and the developer can’t recover it. Without the password, only the date of the export, the version of the app, and the settings of the encryption can be read. Your documents are included unless you turn off “Include documents,” and so are the items deleted less than 30 days ago, without the file of a deleted document.</li>
 <li><strong>Error logs</strong>: when an error occurs, the app writes it to the iPhone’s system log. iOS hides its details by default, which may quote a stored value; the app never sends this log.</li>
@@ -60,7 +58,7 @@
 <p>Some Apple services receive a copy, when you use them:</p>
 <ul>
 <li><strong>iPhone backup</strong>: if iCloud Backup or the computer backup is on, iOS copies the data of the app into it, documents included. The app syncs nothing with iCloud: your data is not shared between your devices.</li>
-<li><strong>Lock Screen</strong>: iOS shows the notifications and alarms as described above.</li>
+<li><strong>Lock Screen</strong>: iOS shows the notifications as described above.</li>
 <li><strong>Files and iCloud Drive</strong>: an export goes where you choose.</li>
 <li><strong>Sharing</strong>: the document viewer of iOS lets you share a document, if you do it yourself.</li>
 <li><strong>Safari</strong>: a link you added to a reminder opens there when you tap it; the website then sees your visit.</li>
@@ -84,12 +82,11 @@
 <h2>Your permissions, and how to withdraw them</h2>
 <p>Each permission can be withdrawn in iPhone Settings, on the LetMeRemind page. Withdrawing one erases none of your data.</p>
 <ul>
-<li><strong>Notifications</strong>, asked during the presentation of the app. Turned off, the app schedules no notification and clears its badge; its Settings say so, with a button to iPhone Settings, and “Remind me in 30 minutes” is no longer offered. In the notification settings, you can also turn off Time Sensitive notifications alone.</li>
-<li><strong>Alarms</strong>, asked the first time you turn on the alarm of a treatment. Refused, the switch goes back off; withdrawn later, no alarm rings any more, and the intakes are notified again.</li>
+<li><strong>Notifications</strong>, asked during the presentation of the app. Turned off, the app schedules no notification and clears its badge; its Settings say so, with a button to iPhone Settings. In the notification settings, you can also turn off Time Sensitive notifications alone.</li>
 <li><strong>Face ID</strong>, asked when you turn on the lock. Turned off for LetMeRemind, the app asks for its 6-digit code instead; it never asks for the iPhone passcode.</li>
 <li><strong>Camera</strong>, asked by iOS the first time you scan. Turned off, the scanner can no longer use the camera; you can still add a PDF or a photo from Files or Photos.</li>
 <li><strong>Photos</strong>: no permission is needed, as the picker only gives the photo you choose.</li>
-<li><strong>Background App Refresh</strong>: turned off, notifications and alarms are rescheduled only when you open the app; those already scheduled still arrive.</li>
+<li><strong>Background App Refresh</strong>: turned off, notifications are rescheduled only when you open the app; those already scheduled still arrive.</li>
 <li><strong>Actions from a notification</strong>: in LetMeRemind, Settings, Security, “Unlock to act from a notification” makes “Paid,” “Done,” “Checked,” and “Snooze” ask you to unlock the iPhone first. It is off by default.</li>
 </ul>
 </section>
