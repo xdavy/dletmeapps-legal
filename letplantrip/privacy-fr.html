@@ -24,9 +24,9 @@
 <li><strong>Les voyages</strong> : nom, dates ou durée, premier et dernier jour, villes de l'aller et du retour, et une photo de couverture choisie parmi celles livrées avec l'app.</li>
 <li><strong>Les étapes et les trajets</strong> : le nom de chaque étape, ses nuits, sa note et sa position sur la carte ; entre les étapes, le moyen de transport, les heures locales comme sur ton billet, un numéro de vol ou de train, les nuits en route et une note.</li>
 <li><strong>Les lieux et les jours</strong> : le nom de chaque lieu, sa catégorie, sa note, son lien, son adresse postale, sa position sur la carte et les jours où il est prévu ; les choses à faire de chaque jour, avec leur heure et leur commentaire.</li>
-<li><strong>L'écran « Compte »</strong> : un nom facultatif, qui reste sur cet iPhone et n'entre pas dans les sauvegardes, et tes réglages d'apparence, de verrou et de rappels.</li>
+<li><strong>L'écran « Compte »</strong> : un nom facultatif, qui n'entre pas dans les sauvegardes que tu fais, et tes réglages d'apparence, de verrou et de rappels.</li>
 <li><strong>Les sauvegardes que tu fais toi-même</strong> : des fichiers qui contiennent tous tes voyages, chiffrés par ta phrase de secours.</li>
-<li><strong>La phrase de secours</strong>, tirée au hasard par l'app, et une marque de cet iPhone (la date et l'heure du premier lancement de l'app sur lui), toutes deux dans le trousseau de cet iPhone. La marque figure dans le nom des fichiers de sauvegarde, pour que l'app distingue ses copies de celles de tes autres iPhone.</li>
+<li><strong>La phrase de secours</strong>, tirée au hasard par l'app, et une marque de cet iPhone (la date et l'heure où l'app en a eu besoin la première fois, en général à ta première sauvegarde), toutes deux dans le trousseau de cet iPhone. La marque figure dans le nom des fichiers de sauvegarde, pour que l'app distingue ses copies de celles de tes autres iPhone.</li>
 </ul>
 <p>Il n'y a ni compte ni connexion, et le développeur n'a aucun serveur : l'app ne lui envoie rien. Elle n'a ni publicité ni mesure d'audience, n'embarque aucun code tiers, et ne s'adresse pas spécialement aux enfants ; quel que soit ton âge, le développeur ne recueille rien.</p>
 </section>
@@ -36,7 +36,7 @@
 <ul>
 <li><strong>Ce que tu saisis</strong> : tout ce que tu tapes dans l'app.</li>
 <li><strong>Un lieu partagé depuis une autre app</strong>, comme Google Maps : la feuille de partage de letplantrip reçoit son lien, et lit le nom et la position du lieu dans l'adresse où mène ce lien (voir la partie Google plus bas).</li>
-<li><strong>Les positions sur la carte</strong> : trouvées par Plans d'Apple à partir du nom d'une étape ou de l'adresse d'un lieu (voir plus bas), ou posées par toi sur la carte.</li>
+<li><strong>Les positions sur la carte</strong> : trouvées par Plans d'Apple à partir du nom d'une étape, ou de l'adresse ou du nom d'un lieu (voir plus bas), ou posées par toi sur la carte.</li>
 <li><strong>Le voyage d'exemple</strong> : ajouté par l'app seulement quand tu le demandes, avec un contenu inventé.</li>
 </ul>
 </section>
@@ -51,10 +51,10 @@
 <p>Aucun tiers ne reçoit tes voyages. L'app fait quelques connexions, chacune pour une fonction, et n'y ajoute aucun compte ni identifiant à elle :</p>
 <ul>
 <li><strong>Les fonds de carte de Plans</strong> : ils sont chargés chez Apple tant que l'onglet Carte est à l'écran.</li>
-<li><strong>La recherche de Plans</strong> : pour placer tes étapes et tes lieux sur la carte, l'app envoie à Apple le nom d'une étape, ou l'adresse postale d'un lieu (son nom quand il n'a ni position ni adresse), avec la zone où chercher, et rien d'autre ; une fois par nom ou par adresse, quand l'onglet Carte s'ouvre. La recherche Plans de l'onglet Carte envoie à Apple ce que tu y tapes, au fil de la frappe, avec la région de ton voyage comme indice.</li>
-<li><strong>Google, depuis la feuille de partage seulement</strong> : quand tu partages un lien Google Maps, la feuille de partage envoie ce lien, et seulement lui, aux adresses de Google, une étape après l'autre, pour savoir où il mène. Elle ne garde aucun cookie et ne lit aucune page. Une adresse hors de la liste officielle des domaines de Google n'est jamais suivie.</li>
+<li><strong>La recherche de Plans</strong> : pour placer tes étapes et tes lieux sur la carte, l'app envoie à Apple le nom d'une étape, ou l'adresse postale d'un lieu, puis le nom du lieu quand il n'a pas d'adresse ou que son adresse n'a pas été trouvée, avec la zone où chercher, et rien d'autre ; une fois par nom ou par adresse, quand l'onglet Carte s'ouvre. La recherche Plans, ouverte depuis l'onglet Carte ou depuis un jour, envoie à Apple le nom de l'étape ou du lieu que tu places dès qu'elle s'ouvre, puis ce que tu y tapes, au fil de la frappe, avec la région de ton voyage comme indice.</li>
+<li><strong>Google, depuis la feuille de partage seulement</strong> : quand tu partages un lien Google Maps, la feuille de partage envoie ce lien, et seulement lui, aux adresses de Google, une étape après l'autre, pour savoir où il mène. Elle ne garde aucun cookie et ne lit aucune page. Une adresse hors de la liste officielle des domaines de Google et de ses domaines de liens courts (goo.gl, share.google, g.co) n'est jamais suivie.</li>
 <li><strong>iCloud Drive</strong>, seulement si tu allumes « Copie dans iCloud Drive » : chaque sauvegarde, déjà chiffrée par ta phrase de secours, est copiée dans le dossier de l'app sur ton iCloud Drive, qui garde les 10 plus récentes de cet iPhone. Apple garde ces fichiers ; sans ta phrase, leur contenu ne se lit pas.</li>
-<li><strong>La sauvegarde de ton iPhone</strong> (iCloud ou ordinateur) : comme pour toute app, la base de l'app et les sauvegardes gardées dans l'app font partie de la sauvegarde de l'appareil, sous les protections qu'Apple lui applique. La phrase de secours ne passe jamais sur un autre appareil ; voir plus bas.</li>
+<li><strong>La sauvegarde de ton iPhone</strong> (iCloud ou ordinateur) : comme pour toute app, la base de l'app, ses réglages avec le nom facultatif, et les sauvegardes gardées dans l'app font partie de la sauvegarde de l'appareil, sous les protections qu'Apple lui applique. La phrase de secours ne passe jamais sur un autre appareil ; voir plus bas.</li>
 <li><strong>Fichiers et la feuille de partage</strong> : seulement quand tu partages une sauvegarde, ou que tu choisis un fichier à restaurer, par le sélecteur ou la feuille de partage que tu commandes.</li>
 </ul>
 </section>
@@ -62,13 +62,13 @@
 <section id="retention">
 <h2>Combien de temps, et comment supprimer</h2>
 <p>Les données restent sur ton iPhone jusqu'à ce que tu les supprimes. Tu peux supprimer un voyage, une étape, un lieu ou une sauvegarde dans l'app. Supprimer l'app efface de l'iPhone sa base et les sauvegardes gardées dans l'app. Les copies dans iCloud Drive restent jusqu'à ce que tu les supprimes : dans l'app, par « Supprimer partout » sur une sauvegarde, ou en coupant « Copie dans iCloud Drive » et en choisissant « Supprimer les copies » ; ou dans l'app Fichiers.</p>
-<p>La phrase de secours est gardée dans le trousseau de cet iPhone, derrière Face ID ou ton code, et ne passe jamais sur un autre appareil. Contrairement au reste, iOS la garde après la suppression de l'app : réinstallée sur le même iPhone, l'app la retrouve et ouvre tes anciennes sauvegardes. Si elle est perdue, personne ne peut ouvrir les sauvegardes chiffrées, le développeur compris.</p>
+<p>La phrase de secours est gardée dans le trousseau de cet iPhone, derrière Face ID ou ton code, et ne passe jamais sur un autre appareil. Contrairement au reste, iOS la garde après la suppression de l'app, avec la marque de cet iPhone : réinstallée sur le même iPhone, l'app les retrouve et ouvre tes anciennes sauvegardes. Si elle est perdue, personne ne peut ouvrir les sauvegardes chiffrées, le développeur compris.</p>
 </section>
 
 <section id="consent">
 <h2>Tes autorisations, et comment les retirer</h2>
 <ul>
-<li><strong>Face ID</strong> : demandé quand tu allumes le verrou de l'app, et quand tu affiches ou vérifies ta phrase de secours. Retire-le dans Réglages → Face ID et code → Autres apps ; l'app demande alors ton code.</li>
+<li><strong>Face ID</strong> : il sert à ouvrir l'app verrouillée et à allumer ou couper le verrou, et à lire ta phrase de secours : à chaque sauvegarde après la première, pour ouvrir une sauvegarde, et pour afficher, vérifier ou changer la phrase. iOS te demande ton accord la première fois. Retire-le dans Réglages → Face ID et code → Autres apps ; l'app demande alors ton code.</li>
 <li><strong>Notifications</strong> : demandées seulement la première fois que tu choisis la fréquence des rappels de sauvegarde. Les rappels sont programmés sur l'iPhone et ne citent aucun voyage. Retire-les dans Réglages → Notifications → letplantrip.</li>
 <li><strong>iCloud Drive</strong> : coupé tant que tu n'allumes pas « Copie dans iCloud Drive » dans « Compte » ; tu le coupes au même endroit, quand tu veux.</li>
 </ul>
