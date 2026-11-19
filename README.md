@@ -7,7 +7,7 @@ Plain HTML and one stylesheet, no build step: GitHub Pages serves the files as t
 ## Layout
 
 - `index.html`: the list of apps. `404.html`: served for any unknown address.
-- One folder per app (`letmereminder/`, `letmenotes/`, `running7277/`) with four pages: `privacy.html` and `support.html` in English, `privacy-fr.html` and `support-fr.html` in French. Each page links to its other language and to its sibling page.
+- One folder per app (`letmereminder/`, `letmenotes/`, `running7277/`, `letplantrip/`) with four pages: `privacy.html` and `support.html` in English, `privacy-fr.html` and `support-fr.html` in French. Each page links to its other language and to its sibling page.
 - `style.css`: the only stylesheet. `scripts/check.sh`: the checks below.
 
 ## Page contract

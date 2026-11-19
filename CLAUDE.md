@@ -6,7 +6,7 @@ Le niveau du projet (léger) et les décisions sont dans `DECISIONS.md`. Les rè
 
 ## Arborescence
 
-- Site : la racine du dépôt, servie telle quelle par GitHub Pages. `index.html`, `style.css`, `.nojekyll`, puis un dossier par app en minuscules (`letmereminder/`, `letmenotes/`, `running7277/`) avec `privacy.html`, `privacy-fr.html`, `support.html`, `support-fr.html`.
+- Site : la racine du dépôt, servie telle quelle par GitHub Pages. `index.html`, `style.css`, `.nojekyll`, puis un dossier par app en minuscules (`letmereminder/`, `letmenotes/`, `running7277/`, `letplantrip/`) avec `privacy.html`, `privacy-fr.html`, `support.html`, `support-fr.html`.
 - Scripts de vérification : `scripts/`.
 - Documents (`DECISIONS.md`) : la racine, non versionnés.
 
